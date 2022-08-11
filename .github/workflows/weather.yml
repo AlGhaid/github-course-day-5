@@ -1,12 +1,12 @@
 name: Weather api
 
 on:
-pull_request:
+  pull_request:
     branches: ["*"]
 
 jobs:
-  weather:
-  runs-on: ubuntu-latest
+  # weather:
+    runs-on: ubuntu-latest
     steps:
      - env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
